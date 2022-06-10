@@ -13,6 +13,7 @@ public class ModItems {
 
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item ORICHALCUM_NUGGET = registerItem("orichalcum_nugget", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item RAW_ORICHALCUM = registerItem("raw_orichalcum", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static void registerModItems() {
         Modyux.LOGGER.info("Registering Items for Modyux");

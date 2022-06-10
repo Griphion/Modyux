@@ -19,6 +19,11 @@ public class ModBlocks {
     public static final Block ORICHALCUM_ORE = registerBlock("orichalcum_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()),
             ItemGroup.BUILDING_BLOCKS);
+
+    public static final Block RAW_ORICHALCUM_ORE = registerBlock("raw_orichalcum_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(7f).requiresTool()),
+            ItemGroup.BUILDING_BLOCKS);
+
     public static void registerModBlocks() {
         Modyux.LOGGER.info("Registering Blocks for Modyux");
     }
