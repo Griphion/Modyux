@@ -1,4 +1,6 @@
 {
   "item.modyux.orichalcum_ingot": "Orichalcum Ingot",
-  "item.modyux.orichalcum_nugget": "Orichalcum Nugget"
+  "item.modyux.orichalcum_nugget": "Orichalcum Nugget",
+
+  "block.modyux.orichalcum_block": "Orichalcum Block"
 }
