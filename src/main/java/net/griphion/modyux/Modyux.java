@@ -3,6 +3,7 @@ package net.griphion.modyux;
 import net.fabricmc.api.ModInitializer;
 import net.griphion.modyux.block.ModBlocks;
 import net.griphion.modyux.item.ModItems;
+import net.griphion.modyux.util.ModRegistries;
 import net.griphion.modyux.world.feature.ModOreConfiguredFeatures;
 import net.griphion.modyux.world.gen.ModWorldGen;
 import org.slf4j.Logger;
@@ -22,5 +23,6 @@ public class Modyux implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModWorldGen.generateModWorldGen();
+		ModRegistries.registerExtraModStuff();
 	}
 }
