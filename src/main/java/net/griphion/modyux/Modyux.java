@@ -3,6 +3,8 @@ package net.griphion.modyux;
 import net.fabricmc.api.ModInitializer;
 import net.griphion.modyux.block.ModBlocks;
 import net.griphion.modyux.item.ModItems;
+import net.griphion.modyux.world.feature.ModOreConfiguredFeatures;
+import net.griphion.modyux.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +16,11 @@ public class Modyux implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Modyux initializing");
 
+		ModOreConfiguredFeatures.registerOreConfiguredFeatures();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGen.generateModWorldGen();
 	}
 }

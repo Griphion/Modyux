@@ -12,6 +12,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
+    // Registro de bloques
+
     public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()),
             ItemGroup.BUILDING_BLOCKS);
@@ -20,7 +22,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),
             ItemGroup.BUILDING_BLOCKS);
 
-    public static final Block RAW_ORICHALCUM_ORE = registerBlock("raw_orichalcum_block",
+    public static final Block RAW_ORICHALCUM_BLOCK = registerBlock("raw_orichalcum_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(7f).requiresTool()),
             ItemGroup.BUILDING_BLOCKS);
 
