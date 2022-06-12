@@ -13,7 +13,7 @@ public class SlowmoTestCommand {
     }
 
     private static int run(CommandContext<ServerCommandSource> context) {
-        SlowmoManager.setCustomTPS(2f);
+        SlowmoManager.setCustomTPS(20.0f * 0.9f);
         return 1;
     }
 }

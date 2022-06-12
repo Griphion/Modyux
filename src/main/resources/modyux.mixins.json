@@ -4,6 +4,7 @@
   "package": "net.griphion.modyux.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModArrowEntity",
     "ModMinecraftClient",
     "ModPlayerData",
     "ModRenderTickCounter"
