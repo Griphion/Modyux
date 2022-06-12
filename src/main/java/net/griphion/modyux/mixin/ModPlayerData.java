@@ -1,6 +1,7 @@
 package net.griphion.modyux.mixin;
 
 import net.griphion.modyux.util.IPlayerData;
+import net.griphion.modyux.util.SlowmoManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,6 +26,12 @@ public class ModPlayerData implements IPlayerData {
     protected void readData(NbtCompound nbt, CallbackInfo ci) {
         if (nbt.contains("modyux.data", 10))
             data = nbt.getCompound("modyux.data");
+    }
+
+    // Para que los TPS se actualicen en cada tick
+    @Inject(at = @At("TAIL"), method = "tick")
+    private void tick(CallbackInfo info) {
+        SlowmoManager.updateTps();
     }
 
     @Override
